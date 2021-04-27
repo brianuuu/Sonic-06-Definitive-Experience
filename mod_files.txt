@@ -1,0 +1,10 @@
+add mod.ini
+add core/cmn200.ar.01
+add core/cmn200.arl
+add core/cmn200_Elise.arl
+add core/cmn200_Elise_JPN.arl
+add core/cmn200_Elise_noLock.arl
+add core/cmn200_Elise_noLock_JPN.arl
+add core/cmn200_JPN.arl
+add core/cmn200_noLock.arl
+add core/cmn200_noLock_JPN.arl
