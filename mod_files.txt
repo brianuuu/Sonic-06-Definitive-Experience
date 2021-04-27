@@ -1,5 +1,5 @@
 add mod.ini
-add "READ ME (Sonic 06 Definitive Experience).txt"
+add README.txt
 add core/cmn200.ar.01
 add core/cmn200.arl
 add core/cmn200_Elise.arl
