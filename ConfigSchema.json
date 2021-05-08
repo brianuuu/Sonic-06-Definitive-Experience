@@ -1,214 +1,204 @@
 {
-   "Groups":[
-      {
-         "Name":"CPKs",
-         "DisplayName":"Character Mod Customization",
-         "Elements":
-         [
+	"Groups": 
+	[
+		{
+			"Name": "Main",
+			"DisplayName": "Mod Customization",
+			"Elements": 
+			[
+				{
+					"Name": "nModel",
+					"DisplayName": "Character Model",
+					"Description": 
+					[
+						"Select character model to play with"
+					],
+					"Type": "ModelType",
+					"MinValue": null,
+					"MaxValue": null,
+					"DefaultValue": "0"
+				},
+				{
+					"Name": "nLanguage",
+					"DisplayName": "Voice-over Language",
+					"Description": 
+					[
+						"Select voice-over language (You MUST also change voice-over language at in-game Options for this to work properly)"
+					],
+					"Type": "LanguageType",
+					"MinValue": null,
+					"MaxValue": null,
+					"DefaultValue": "0"
+				},
+				{
+					"Name": "bPhysics",
+					"DisplayName": "Enable 06 Physics",
+					"Description": 
+					[
+						"Enable 06 physics, disable lock-on cursor recommended",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bNoCursor",
+					"DisplayName": "Disable Lock-on Cursor",
+					"Description": 
+					[
+						"Disable lock-on cursor (recommended for 06 physics)",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bNoSpin",
+					"DisplayName": "Disable Spin on Dash Panels",
+					"Description": 
+					[
+						"Disable spin ball model on dash panels (recommended for all)",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":true
+				},
+				{
+					"Name":"IncludeDir0",
+					"DisplayName":"Result Music",
+					"Description":
+					[
+						"Select result music",
+					],
+					"Type":"ResultType",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":"Sound_result"
+				},
+				{
+					"Name": "nRun",
+					"DisplayName": "Running Goal (Sonic only)",
+					"Description": 
+					[
+						"Enable running goal at result screen",
+					],
+					"Type":"RunResultType",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":"0"
+				},
+				{
+					"Name": "sRunStages",
+					"DisplayName": "Custom List of Running Goal Stages",
+					"Description": 
+					[
+						"Enable running goal with the listed stages (check README.txt for stages list)",
+					],
+					"Type":"string",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":""
+				},
+			]
+		},
+	],
+	"Enums": 
+	{
+		"ModelType": 
+		[
 			{
-               "Name":"disk\\bb.cpk",
-               "DisplayName":"Voice and Lock-on Cursor",
-               "Description":[
-                  "Choose mod combinations\n(You MUST also change voice-over language at in-game Options for this to work properly)",
-               ],
-               "Type":"Typebb",
-               "MinValue":null,
-               "MaxValue":null,
-               "DefaultValue":"core\\bb.ini"
-            },
-            {
-               "Name":"disk\\bb3.cpk",
-               "DisplayName":"Voice, Physics, Model and Animation",
-               "Description":[
-                  "Choose mod combinations\n(you MUST also change voice-over language at in-game Options for this to work properly)",
-               ],
-               "Type":"Typebb3",
-               "MinValue":null,
-               "MaxValue":null,
-               "DefaultValue":"core\\bb3.ini"
-            },
-         ]
-      },
-	  {
-         "Name":"Main",
-         "DisplayName":"Music & Sound Effects",
-         "Elements":
-         [
+				"DisplayName": "Sonic",
+				"Value": "0",
+				"Description": 
+				[
+					"06 Sonic Model",
+				]
+			},
 			{
-               "Name":"IncludeDir0",
-               "DisplayName":"Result Music",
-               "Description":[
-                  "Enable/Disable 06 Result musics",
-               ],
-               "Type":"ResultEnum",
-               "MinValue":null,
-               "MaxValue":null,
-               "DefaultValue":"."
-            },
-         ]
-      }
-   ],
-   "Enums":{
-      "Typebb":[
-         {
-            "DisplayName":"(Sonic) English",
-            "Value":"core\\bb.ini",
-            "Description":[
-               "English voice",
-            ]
-         },
-         {
-            "DisplayName":"(Sonic) English + Disable Lock-on Cursor",
-            "Value":"core\\bb_phy.ini",
-            "Description":[
-               "English voice + No lock-on cursor (best used with 06 physics)",
-            ]
-         },
-         {
-            "DisplayName":"(Sonic) Japanese",
-            "Value":"core\\bb_JPN.ini",
-            "Description":[
-               "Japanese voice",
-            ]
-         },
-         {
-            "DisplayName":"(Sonic) Japanese + Disable Lock-on Cursor",
-            "Value":"core\\bb_phy_JPN.ini",
-            "Description":[
-               "Japanese voice + No lock-on cursor (best used with 06 physics)",
-            ]
-         },
-		 {
-            "DisplayName":"(Sonic & Elise) English",
-            "Value":"core\\bb_Elise.ini",
-            "Description":[
-               "English voice w/ Elise",
-            ]
-         },
-         {
-            "DisplayName":"(Sonic & Elise) English + Disable Lock-on Cursor",
-            "Value":"core\\bb_Elise_phy.ini",
-            "Description":[
-               "English voice w/ Elise + No lock-on cursor (best used with 06 physics)",
-            ]
-         },
-         {
-            "DisplayName":"(Sonic & Elise) Japanese",
-            "Value":"core\\bb_Elise_JPN.ini",
-            "Description":[
-               "Japanese voice w/ Elise",
-            ]
-         },
-         {
-            "DisplayName":"(Sonic & Elise) Japanese + Disable Lock-on Cursor",
-            "Value":"core\\bb_Elise_phy_JPN.ini",
-            "Description":[
-               "Japanese voice w/ Elise + No lock-on cursor (best used with 06 physics)",
-            ]
-         },
-      ],
-      "Typebb3":[
-         {
-            "DisplayName":"(Sonic) English",
-            "Value":"core\\bb3.ini",
-            "Description":[
-               "English voice",
-            ]
-         },
-         {
-            "DisplayName":"(Sonic) English + 06 Physics",
-            "Value":"core\\bb3_phy.ini",
-            "Description":[
-               "English voice + 06 Style Physics",
-            ]
-         },
-         {
-            "DisplayName":"(Sonic) English + Running Goal",
-            "Value":"core\\bb3_run.ini",
-            "Description":[
-               "English voice + Running Goal Animation",
-            ]
-         },
-         {
-            "DisplayName":"(Sonic) English + 06 Physics + Running Goal",
-            "Value":"core\\bb3_phy_run.ini",
-            "Description":[
-               "English voice + 06 Style Physics + Running Goal Animation",
-            ]
-         },
-         {
-            "DisplayName":"(Sonic) Japanese",
-            "Value":"core\\bb3_JPN.ini",
-            "Description":[
-               "Japanese voice",
-            ]
-         },
-         {
-            "DisplayName":"(Sonic) Japanese + 06 Physics",
-            "Value":"core\\bb3_phy_JPN.ini",
-            "Description":[
-               "Japanese voice + 06 Style Physics",
-            ]
-         },
-         {
-            "DisplayName":"(Sonic) Japanese + Running Goal",
-            "Value":"core\\bb3_run_JPN.ini",
-            "Description":[
-               "Japanese voice + Running Goal Animation",
-            ]
-         },
-         {
-            "DisplayName":"(Sonic) Japanese + 06 Physics + Running Goal",
-            "Value":"core\\bb3_phy_run_JPN.ini",
-            "Description":[
-               "Japanese voice + 06 Style Physics + Running Goal Animation",
-            ]
-         },
-		 {
-            "DisplayName":"(Sonic & Elise) English",
-            "Value":"core\\bb3_Elise.ini",
-            "Description":[
-               "English voice w/ Elise",
-            ]
-         },
-		 {
-            "DisplayName":"(Sonic & Elise) English + 06 Physics",
-            "Value":"core\\bb3_Elise_phy.ini",
-            "Description":[
-               "English voice w/ Elise + 06 Style Physics",
-            ]
-         },
-		 {
-            "DisplayName":"(Sonic & Elise) Japanese",
-            "Value":"core\\bb3_Elise_JPN.ini",
-            "Description":[
-               "Japanese voice w/ Elise",
-            ]
-         },
-		 {
-            "DisplayName":"(Sonic & Elise) Japanese + 06 Physics",
-            "Value":"core\\bb3_Elise_phy_JPN.ini",
-            "Description":[
-               "Japanese voice w/ Elise + 06 Style Physics",
-            ]
-         },
-      ],
-	  "ResultEnum":[
-         {
-            "DisplayName":"Enable",
-            "Value":"Sound_result",
-            "Description":[
-               "Use Sonic 06 result music",
-            ]
-         },
-		 {
-            "DisplayName":"Disable",
-            "Value":".",
-            "Description":[
-               "Use Generations result music",
-            ]
-         },
-      ]
-   },
-   "IniFile":"mod.ini"
+				"DisplayName": "Sonic + Elise",
+				"Value": "1",
+				"Description": 
+				[
+					"06 Sonic + Elise Model",
+				]
+			},
+		],
+		"LanguageType": 
+		[
+			{
+				"DisplayName": "English",
+				"Value": "0",
+				"Description": 
+				[
+					"English voice",
+				]
+			},
+			{
+				"DisplayName": "Japanese",
+				"Value": "1",
+				"Description": 
+				[
+					"Japanese voice",
+				]
+			},
+		],
+		"ResultType":
+		[
+			{
+				"DisplayName":"06 Result Music",
+				"Value":"Sound_result",
+				"Description":
+				[
+					"Use Sonic 06 result music",
+				]
+			},
+			{
+				"DisplayName":"Generations Result Music",
+				"Value":".",
+				"Description":
+				[
+					"Use Generations result music",
+				]
+			},
+		],
+		"RunResultType":
+		[
+			{
+				"DisplayName":"Disable",
+				"Value": "0",
+				"Description":
+				[
+					"Use normal goal animation",
+				]
+			},
+			{
+				"DisplayName":"Enable All",
+				"Value": "1",
+				"Description":
+				[
+					"Always use running goal animation",
+				]
+			},
+			{
+				"DisplayName":"STH2006 Project Stages",
+				"Value": "2",
+				"Description":
+				[
+					"Use gunning goal on Sonic 06 specific stages (Wave Ocean, Crisis City, Radical Train, Kingdom Valley)",
+				]
+			},
+			{
+				"DisplayName":"Custom",
+				"Value": "3",
+				"Description":
+				[
+					"Use running goal of user defined stages, use text field below",
+				]
+			},
+		]
+	},
+	"IniFile": "mod.ini"
 }

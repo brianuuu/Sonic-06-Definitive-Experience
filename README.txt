@@ -1,14 +1,16 @@
 ---------------------------Sonic Generations Mod--------------------------
---------------------Sonic 06 Definitive Experience v2.1-------------------
+--------------------Sonic 06 Definitive Experience v2.2-------------------
 
 This is a mod that features various original models, animations and physics from the game Sonic the Hedgehog (2006).
 Currently includes:
 -06 Sonic character mod
--06 Sonic character mod w/ Running Goal
 -06 Sonic + Elise character mod
 -Above with English/Japanese Voice
 -06 physics (optional)
 -06 Result Music (optional)
+-Disable lock-on cursor (optional)
+-Disable Spin on Dash Panels (optional)
+-Running goal for Sonic model (optional)
 
 REQUIREMENT: 
 -Only works with HedgeModManager, SonicGMI is NOT supported!!!
@@ -17,17 +19,45 @@ REQUIREMENT:
 ------------------------------------------------------------
 Mod configurations:
 ------------------------------------------------------------
-Voice and Lock-on Cursor:
--Enable/Disable lock-on cursor, disable this for homing attack if you want to feel like 06
--Above with combination with language and model
+Character Model:
+-Select character model to play with
 
-Voice, Physics, Model and Animation:
--Optional 06 physics
--Running goal for 06 Sonic (this will idle animation replaced, keep moving to avoid this being displayed)
--Various combination with language and model
+Voice-over Language:
+-Select voice-over language (You MUST also change voice-over language at in-game Options for this to work properly)
+
+Enable 06 Physics:
+-Enable 06 physics, disable lock-on cursor recommended
+
+Disable Lock-on Cursor
+-Disable lock-on cursor, disable this for homing attack if you want to feel like 06
+
+Disable Spin on Dash Panels:
+-Disable spin ball model on dash panels (recommended for all)
 
 Result Music:
--Enable/Disable 06 result music here
+-Use Generations or Sonic 06 result music
+
+Running Goal (Sonic only):
+-Disable: Use normal goal animation
+-Enable All: Always use running goal animation
+-STH2006 Project Stages: Use gunning goal on Sonic 06 specific stages (Wave Ocean, Crisis City, Radical Train, Kingdom Valley)
+-Custom: Use running goal of user defined stages (see below)
+
+Custom list of Running Goal Stages:
+-Separate list of stages by ",", e.g.: ghz200,cpz200,ssz200 etc.
+
+List of stages: Generations Stage (STH2006 Project Stage)
+-ghz100: Classic Green Hill (Prelude Stage)
+-ghz200: Modern Green Hill (Wave Ocean)
+-cpz200: Modern Chemical Plant (Dusty Desert)
+-ssz200: Modern Sky Sanctuary (White Acropolis)
+-sph200: Modern Speed Highway (Crisis City)
+-cte200: Modern City Escape (Flame Core)
+-ssh200: Modern Seaside Hill (Radical Train)
+-csc200: Modern Crisis City (Tropical Jungle)
+-euc200: Modern Rooftop Run (Kingdom Valley)
+-pla200: Modern Planet Wisp (Aquatic Base)
+*Change 200 to 100 for Classic stages
 
 ------------------------------------------------------------
 Features Highlight
@@ -42,6 +72,8 @@ Common:
 -06 skateboard from White Acropolis
 -Destroyed skateboard from Crisis City (does not work in Demo 3)
 -English and Japanese support!
+-06 Itemboxes
+-Rank quotes from Sonic 06
 
 Physics mod exclusive:
 -Gravity-defying homing attack
@@ -105,6 +137,17 @@ v2.1
 -Better dashpanel & jump panel materials
 -1up and 10ring now show as 06 itembox
 
+v2.2
+-Revamped configurations, now much cleaner and also make use of dll mods
+-Fixed running goal animation not needing to replace idle animation!
+-Added rank result comment voice code mod!
+-Added various community code by Hyper (Disable lock-on cursor/spin on dash panels etc.)
+-Updated ring UI texture (Credit goes to Hyper for upscaled texture)
+-Moved lock-on cursor disable to a separate option in config
+-Combined all rank animations into a single archive
+-Brought back button prompts (except for A-A homing attack and Y light speed dash)
+-Further reduced duplicated textures in LoadingHint
+
 ------------------------------------------------------------
 Credits
 ------------------------------------------------------------
@@ -114,12 +157,14 @@ brianuuu (brianuuuSonic)
 -Custom animations
 -06 custom physics
 -Voice mod, enemy sfx
--HUD mod
+-Custom HUD
+-DLL mod codes
 
 Skyth
 -various tools
 -cutscene skipping mod
 -anm.hkx clean script to reduce animation size
+-No Boosting Animation When Grinding code
 
 ItsHelias94
 -Model fixing, Sonic's materials
@@ -128,6 +173,7 @@ ItsHelias94
 
 Mario Tainaka
 -Added random jump, homing attack voice clips
+-Added rank quote sounds to sound bank (non-code)
 -Various sfx support
 -Beta testing
 
@@ -135,6 +181,15 @@ UltimateDarkman
 -Various custom animations
 -Elise's materials
 -06 springs
+
+Hyper
+-Disable Homing Redicle code
+-Disable Spin Dash on Dash Panels code
+-Disable Boost Button Prompt code
+-Disable Light Dash Hints code
+
+Sajid
+-Coding guidence
 
 TGE, Zoney
 -Original 06 Sonic model and animation for 3ds max
