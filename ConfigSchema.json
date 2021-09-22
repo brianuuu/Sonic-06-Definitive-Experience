@@ -3,7 +3,7 @@
 	[
 		{
 			"Name": "Main",
-			"DisplayName": "Mod Customization",
+			"DisplayName": "General Settings",
 			"Elements": 
 			[
 				{
@@ -31,11 +31,109 @@
 					"DefaultValue": "0"
 				},
 				{
+					"Name":"IncludeDir0",
+					"DisplayName":"Result Music",
+					"Description":
+					[
+						"Select result music",
+					],
+					"Type":"ResultType",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":"Sound_result"
+				},
+			]
+		},
+		{
+			"Name": "Main",
+			"DisplayName": "Camera Settings",
+			"Elements": 
+			[
+				{
+					"Name": "bCamera",
+					"DisplayName": "Enable 06 Camera (Experimental)",
+					"Description": 
+					[
+						"Enable camera control from Sonic 06, use right-stick to move camera, left-trigger to reset",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bCameraInvertX",
+					"DisplayName": "Invert X-Axis",
+					"Description": 
+					[
+						"Invert X-Axis on right-stick camera control",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bCameraInvertY",
+					"DisplayName": "Invert Y-Axis",
+					"Description": 
+					[
+						"Invert Y-Axis on right-stick camera control",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+			]
+		},
+		{
+			"Name": "Main",
+			"DisplayName": "Physics Modification",
+			"Elements": 
+			[
+				{
 					"Name": "bPhysics",
 					"DisplayName": "Enable 06 Physics",
 					"Description": 
 					[
-						"Enable 06 physics, disable lock-on cursor recommended",
+						"Enable 06 physics, this includes character speed & rail lock-on, disable lock-on cursor is recommended",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bCharacterMoveset",
+					"DisplayName": "Use 06 Character Moveset",
+					"Description": 
+					[
+						"Enable using all current character's movesets from 06, refer to README.txt for moveset list",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bXAction",
+					"DisplayName": "Use 06 Button Mapping",
+					"Description": 
+					[
+						"Maps all action to X button, boost maps to right-trigger and drift maps to B button",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bNoBoost",
+					"DisplayName": "Boost Gauge Starts Empty",
+					"Description": 
+					[
+						"Start stages without any boost",
 					],
 					"Type":"bool",
 					"MinValue":null,
@@ -55,32 +153,39 @@
 					"DefaultValue":false
 				},
 				{
-					"Name": "bNoSpin",
-					"DisplayName": "Disable Spin on Dash Panels",
+					"Name": "bNoTrick",
+					"DisplayName": "Disable Trick on Rainbow Ring & Trick Ramp",
 					"Description": 
 					[
-						"Disable spin ball model on dash panels (recommended for all)",
+						"Disable Trick on Rainbow Ring and Trick Ramp, this is NOT the same as community code by Hyper, this retains the rainbow ring animation",
 					],
 					"Type":"bool",
 					"MinValue":null,
 					"MaxValue":null,
-					"DefaultValue":true
+					"DefaultValue":false
 				},
+			]
+		},
+		{
+			"Name": "Main",
+			"DisplayName": "Character Settings (Sonic)",
+			"Elements": 
+			[
 				{
-					"Name":"IncludeDir0",
-					"DisplayName":"Result Music",
-					"Description":
+					"Name": "bRapidSpindash",
+					"DisplayName": "Rapid Spindash",
+					"Description": 
 					[
-						"Select result music",
+						"(Required using 06 character movesets) Allow charging spindash while running or spindashing, but this will disable anti-gravity",
 					],
-					"Type":"ResultType",
+					"Type":"bool",
 					"MinValue":null,
 					"MaxValue":null,
-					"DefaultValue":"Sound_result"
+					"DefaultValue":false
 				},
 				{
 					"Name": "nRun",
-					"DisplayName": "Running Goal (Sonic only)",
+					"DisplayName": "Running Goal",
 					"Description": 
 					[
 						"Enable running goal at result screen",
@@ -156,8 +261,16 @@
 				]
 			},
 			{
+				"DisplayName":"06 Result Music (E3 Demo Ver.)",
+				"Value":"Sound_resultE3",
+				"Description":
+				[
+					"Use Sonic 06 Demo result music from E3",
+				]
+			},
+			{
 				"DisplayName":"Generations Result Music",
-				"Value":".",
+				"Value":"Sound_dummy",
 				"Description":
 				[
 					"Use Generations result music",

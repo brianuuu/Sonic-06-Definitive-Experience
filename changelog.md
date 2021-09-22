@@ -1,3 +1,21 @@
+## Sonic 06 Definitive Experience v3.0
+
+- 06 Super Sonic release
+- 06 Sonic Complete Moveset Recreation (check details in README.txt)
+- 06 Physics adjustment to match 06 values (precise air controls, constant slide speed etc.)
+- 06 Rail Grinding Physics Recreation (enabled for 06 physics only)
+- 06 Particle Effect Recreation
+- Disable grind squat and use grind trick immediately, also added sfx from 06
+- Itembox (1up and 10ring) can now be locked
+- Added complete stage voice and disabled rank animation skip
+- Additional code to disable lock-on cursor on boss fights
+- Added option to use E3 result music
+- Disable lightdash navigation prompts
+- Included Boost Particle (Chaos Energy) goes to Sonic code
+- 06 Sonic/Sonic+Elise now uses the correct brake turning animation
+- Enemies will spawn chaos drives and iblis monsters will spawn light cores
+
+
 ## Sonic 06 Definitive Experience v2.2
 
 - Revamped configurations, now much cleaner and also make use of dll mods
