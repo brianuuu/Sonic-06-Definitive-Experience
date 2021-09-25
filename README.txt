@@ -57,13 +57,13 @@ Use 06 Character Moveset:
 -Enable using all current character's movesets from 06, read below for full details
 
 Use 06 Button Mapping:
--Maps all action to X button, including lightdast, stomp and slide, boost maps to right-trigger and drift maps to B button
+-Maps all actions to X button, including lightdash, stomp and slide, boost maps to right-trigger and drift maps to B button
 
 Boost Gauge Starts Empty:
 -Start stages without any boost
 
 Disable Lock-on Cursor:
--Disable lock-on cursor, disable this for homing attack if you want to feel like 06
+-Disable lock-on cursor, disable this for homing attack if you want to feel like 06, however 06 physics has shorter range homing attack, enabling lock-on cursor can help you adjust to it
 
 Disable Trick on Rainbow Ring & Trick Ramp:
 -Disable Trick on Rainbow Ring and Trick Ramp, this is NOT the same as community code by Hyper, this retains the rainbow ring animation
@@ -73,7 +73,7 @@ Disable Spin on Dash Panels:
 
 <---Character Settings (Sonic)--->
 Rapid Spindash:
--(Required using 06 character movesets) Allow charging spindash while running or spindashing, but this will disable anti-gravity
+-(Required using 06 character movesets) Allows charging spindash while running or spindashing, but this will disable anti-gravity
 
 Running Goal (Sonic only):
 -Disable: Use normal goal animation

@@ -121,7 +121,7 @@
 					"DisplayName": "Use 06 Button Mapping",
 					"Description": 
 					[
-						"Maps all action to X button, boost maps to right-trigger and drift maps to B button",
+						"Maps all actions to X button (including Lightspeed Dash), boost maps to right-trigger and drift maps to B button",
 					],
 					"Type":"bool",
 					"MinValue":null,
@@ -145,7 +145,7 @@
 					"DisplayName": "Disable Lock-on Cursor",
 					"Description": 
 					[
-						"Disable lock-on cursor (recommended for 06 physics)",
+						"Disable lock-on cursor, recommended for 06 physics, however 06 physics has shorter range homing attack, enabling lock-on cursor can help you adjust to it",
 					],
 					"Type":"bool",
 					"MinValue":null,
@@ -176,7 +176,7 @@
 					"DisplayName": "Rapid Spindash",
 					"Description": 
 					[
-						"(Required using 06 character movesets) Allow charging spindash while running or spindashing, but this will disable anti-gravity",
+						"(Required using 06 character movesets) Allows charging spindash while running or spindashing, but this will disable anti-gravity",
 					],
 					"Type":"bool",
 					"MinValue":null,
