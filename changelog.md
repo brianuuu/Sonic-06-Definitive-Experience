@@ -1,3 +1,10 @@
+## Sonic 06 Definitive Experience v3.1
+
+- Adjusted auto-run turning rate, this should make mach speed much easier to control
+- Fixed major crash when loading into any level, especially Elise
+- Fixed Elise's Blast Off/Pulley not playing the correct voice
+- Minor animation fixes
+
 ## Sonic 06 Definitive Experience v3.0
 
 - 06 Super Sonic release

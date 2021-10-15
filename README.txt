@@ -1,5 +1,5 @@
 ---------------------------Sonic Generations Mod--------------------------
---------------------Sonic 06 Definitive Experience v3.0-------------------
+--------------------Sonic 06 Definitive Experience v3.1-------------------
 
 This mod features original models, animations and physics from the game Sonic the Hedgehog (2006). This is not just an ordinary character skin mod, with the help of code injection, this is also a proof-of-concept mod that creates new movesets to Sonic Generations by bringing back character movesets from Sonic 06!
 
@@ -183,7 +183,6 @@ Anti-Gravity:
 ------------------------------------------------------------
 Known Issues
 ------------------------------------------------------------
--The game sometimes can crash upon loading or exiting a stage, this happens rarely with Sonic but more fequently with Sonic+Elise mod, currently no solution has been found for this bug yet, for now just keep restart the game and it will work eventually, once you are able to play a stage and exit to HUB world at least once, it should not crash anymore for the same play session
 -When 06 Button Mapping is enabled, navigation hint may not show the correct button
 
 ------------------------------------------------------------
@@ -258,6 +257,12 @@ v3.0
 -Included Boost Particle (Chaos Energy) goes to Sonic code
 -06 Sonic/Sonic+Elise now uses the correct brake turning animation
 -Enemies will spawn chaos drives and iblis monsters will spawn light cores
+
+v3.1
+-Adjusted auto-run turning rate, this should make mach speed much easier to control
+-Fixed major crash when loading into any level, especially Elise
+-Fixed Elise's Blast Off/Pulley not playing the correct voice
+-Minor animation fixes
 
 ------------------------------------------------------------
 Credits
