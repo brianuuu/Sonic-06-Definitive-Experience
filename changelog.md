@@ -1,3 +1,19 @@
+## Sonic 06 Definitive Experience v4.0
+
+- 06 Blaze release
+- 06 Sonic's Gems recreation
+- 06 Rings (they are thicc!)
+- Restored missing animations for Super Sonic (grinding, sweep kick, sky diving etc.)
+- Sonic+Elise shield now works just like 06 (enabled for 06 moveset only)
+- 06 Camera will not clip inside terrain anymore
+- 06 button mapping will always be enabled if using 06 Character Movesets
+- 06 Physics can now complete Generations Crisis City Act 2
+- Added "Lightdash All Rings" setting
+- Improved Spindash/Anti-Gravity turning rate when using with Generations physics
+- Fixed correct stage clear music length, also added town mission clear music option
+- Fixed rare crash for 06 Sonic and 06 Sonic+Elise in Tropical Jungle
+- Fixed sweep kick being hard to pull off in low framerate
+
 ## Sonic 06 Definitive Experience v3.1
 
 - Adjusted auto-run turning rate, this should make mach speed much easier to control

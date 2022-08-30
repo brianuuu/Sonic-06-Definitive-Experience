@@ -19,39 +19,39 @@
 					"DefaultValue": "0"
 				},
 				{
-					"Name": "nLanguage",
-					"DisplayName": "Voice-over Language",
-					"Description": 
-					[
-						"Select voice-over language (You MUST also change voice-over language at in-game Options for this to work properly)"
-					],
-					"Type": "LanguageType",
-					"MinValue": null,
-					"MaxValue": null,
-					"DefaultValue": "0"
-				},
-				{
-					"Name":"IncludeDir0",
-					"DisplayName":"Result Music",
+					"Name":"nStageClear",
+					"DisplayName":"Stage Clear Music (Initial)",
 					"Description":
 					[
-						"Select result music",
+						"Select initial stage clear music",
 					],
-					"Type":"ResultType",
+					"Type":"StageClearInitType",
 					"MinValue":null,
 					"MaxValue":null,
-					"DefaultValue":"Sound_result"
+					"DefaultValue":"0"
+				},
+				{
+					"Name":"nStageLoop",
+					"DisplayName":"Stage Clear Music (Loop)",
+					"Description":
+					[
+						"Select looping stage clear music",
+					],
+					"Type":"StageClearLoopType",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":"0"
 				},
 			]
 		},
 		{
-			"Name": "Main",
+			"Name": "Camera",
 			"DisplayName": "Camera Settings",
 			"Elements": 
 			[
 				{
 					"Name": "bCamera",
-					"DisplayName": "Enable 06 Camera (Experimental)",
+					"DisplayName": "Enable 06 Camera",
 					"Description": 
 					[
 						"Enable camera control from Sonic 06, use right-stick to move camera, left-trigger to reset",
@@ -88,7 +88,7 @@
 			]
 		},
 		{
-			"Name": "Main",
+			"Name": "Physics",
 			"DisplayName": "Physics Modification",
 			"Elements": 
 			[
@@ -109,19 +109,7 @@
 					"DisplayName": "Use 06 Character Moveset",
 					"Description": 
 					[
-						"Enable using all current character's movesets from 06, refer to README.txt for moveset list",
-					],
-					"Type":"bool",
-					"MinValue":null,
-					"MaxValue":null,
-					"DefaultValue":false
-				},
-				{
-					"Name": "bXAction",
-					"DisplayName": "Use 06 Button Mapping",
-					"Description": 
-					[
-						"Maps all actions to X button (including Lightspeed Dash), boost maps to right-trigger and drift maps to B button",
+						"Enable using all current character's movesets from 06, this also remaps button layout, refer to README.txt for moveset list and button mappings",
 					],
 					"Type":"bool",
 					"MinValue":null,
@@ -145,7 +133,7 @@
 					"DisplayName": "Disable Lock-on Cursor",
 					"Description": 
 					[
-						"Disable lock-on cursor, recommended for 06 physics, however 06 physics has shorter range homing attack, enabling lock-on cursor can help you adjust to it",
+						"Disable lock-on cursor (recommended for 06 physics)",
 					],
 					"Type":"bool",
 					"MinValue":null,
@@ -164,10 +152,22 @@
 					"MaxValue":null,
 					"DefaultValue":false
 				},
+				{
+					"Name": "bLightdashAll",
+					"DisplayName": "Enable Lightdash All Rings",
+					"Description": 
+					[
+						"Allow Light Speed Dash on any rings",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
 			]
 		},
 		{
-			"Name": "Main",
+			"Name": "Sonic",
 			"DisplayName": "Character Settings (Sonic)",
 			"Elements": 
 			[
@@ -176,7 +176,7 @@
 					"DisplayName": "Rapid Spindash",
 					"Description": 
 					[
-						"(Required using 06 character movesets) Allows charging spindash while running or spindashing, but this will disable anti-gravity",
+						"Allow charging spindash while running or spindashing, but this will disable anti-gravity (Requires 06 character movesets)",
 					],
 					"Type":"bool",
 					"MinValue":null,
@@ -207,6 +207,102 @@
 					"MaxValue":null,
 					"DefaultValue":""
 				},
+				{
+					"Name": "bGemBlue",
+					"DisplayName": "Blue Gem",
+					"Description": 
+					[
+						"Enable Blue Gem (Requires 06 character movesets)",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bGemRed",
+					"DisplayName": "Red Gem",
+					"Description": 
+					[
+						"Enable Red Gem (Requires 06 character movesets)",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bGemGreen",
+					"DisplayName": "Green Gem",
+					"Description": 
+					[
+						"Enable Green Gem (Requires 06 character movesets)",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bGemPurple",
+					"DisplayName": "Purple Gem",
+					"Description": 
+					[
+						"Enable Purple Gem (Requires 06 character movesets and 06 camera for accurate behavior)",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bGemSky",
+					"DisplayName": "Sky Gem",
+					"Description": 
+					[
+						"Enable Sky Gem (Requires 06 character movesets)",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bGemWhite",
+					"DisplayName": "White Gem",
+					"Description": 
+					[
+						"Enable White Gem (Requires 06 character movesets)",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bGemYellow",
+					"DisplayName": "Yellow Gem",
+					"Description": 
+					[
+						"Enable Yellow Gem (Requires 06 character movesets)",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
+				{
+					"Name": "bUnlimitedGauge",
+					"DisplayName": "Unlimited Gauge",
+					"Description": 
+					[
+						"Enable Unlimited Gauge just like 06",
+					],
+					"Type":"bool",
+					"MinValue":null,
+					"MaxValue":null,
+					"DefaultValue":false
+				},
 			]
 		},
 	],
@@ -230,6 +326,14 @@
 					"06 Sonic + Elise Model",
 				]
 			},
+			{
+				"DisplayName": "Blaze",
+				"Value": "2",
+				"Description": 
+				[
+					"06 Blaze Model",
+				]
+			},
 		],
 		"LanguageType": 
 		[
@@ -250,30 +354,41 @@
 				]
 			},
 		],
-		"ResultType":
+		"StageClearInitType":
 		[
 			{
-				"DisplayName":"06 Result Music",
-				"Value":"Sound_result",
+				"DisplayName":"Regular Stage",
+				"Value":"0",
 				"Description":
 				[
-					"Use Sonic 06 result music",
+					"Use Sonic 06 stage result music",
 				]
 			},
 			{
-				"DisplayName":"06 Result Music (E3 Demo Ver.)",
-				"Value":"Sound_resultE3",
+				"DisplayName":"Town Mission",
+				"Value":"1",
 				"Description":
 				[
-					"Use Sonic 06 Demo result music from E3",
+					"Use Sonic 06 town mission result music",
+				]
+			},
+		],
+		"StageClearLoopType":
+		[
+			{
+				"DisplayName":"Retail 06 Version",
+				"Value":"0",
+				"Description":
+				[
+					"Use retail Sonic 06 loop result music",
 				]
 			},
 			{
-				"DisplayName":"Generations Result Music",
-				"Value":"Sound_dummy",
+				"DisplayName":"E3 Demo Version",
+				"Value":"1",
 				"Description":
 				[
-					"Use Generations result music",
+					"Use Sonic 06 Demo loop result music from E3",
 				]
 			},
 		],
@@ -313,5 +428,5 @@
 			},
 		]
 	},
-	"IniFile": "mod.ini"
+	"IniFile": "Sonic06DefinitiveExperience.ini"
 }
