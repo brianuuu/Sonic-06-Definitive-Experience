@@ -141,6 +141,7 @@ add core/bb.ini
 add core/bb2.ini
 add core/bb3.ini
 add core/cmn200.ar.00
+add core/cmn200.ar.01
 add core/cmn200.arl
 add core/EnemyCommon.ar.00
 add core/EnemyCommon.arl
@@ -152,6 +153,7 @@ add core/ResidentLoading.arl
 add core/Result.ar.00
 add core/Result.arl
 add core/SonicActionCommon.ar.00
+add core/SonicActionCommon.ar.01
 add core/SonicActionCommon.arl
 add core/SonicActionCommonHud.ar.00
 add core/SonicActionCommonHud.arl
@@ -267,7 +269,6 @@ delete core/bb3_phy_run.ini
 delete core/bb3_phy_run_JPN.ini
 delete core/bb3_run.ini
 delete core/bb3_run_JPN.ini
-delete core/cmn200.ar.01
 delete core/cmn200_Elise.ar.00
 delete core/cmn200_Elise.arl
 delete core/cmn200_Elise_JPN.ar.00

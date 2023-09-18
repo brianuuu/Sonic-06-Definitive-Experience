@@ -1,3 +1,11 @@
+## Sonic 06 Definitive Experience v4.1
+
+- HE1ML compatibility
+- Fixed spindash cancelling early in low fps
+- Restored Burning Blaze skydive and light speed dash animations
+- Increased turning rate for fire tornado
+- Added lock-on cursor for Sky Gem
+
 ## Sonic 06 Definitive Experience v4.0
 
 - 06 Blaze release

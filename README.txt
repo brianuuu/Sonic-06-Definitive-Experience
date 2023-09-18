@@ -1,5 +1,5 @@
 ---------------------------Sonic Generations Mod--------------------------
---------------------Sonic 06 Definitive Experience v4.0-------------------
+--------------------Sonic 06 Definitive Experience v4.1-------------------
 
 This mod features original models, animations and physics from the game Sonic the Hedgehog (2006). This is not just an ordinary character skin mod, with the help of code injection, this is also a proof-of-concept mod that creates new movesets to Sonic Generations by bringing back character movesets from Sonic 06!
 
@@ -246,6 +246,13 @@ A: Unfortunately, because of the speed, you can't run pass the falling/crushing 
 ------------------------------------------------------------
 Change Log
 ------------------------------------------------------------
+v4.1
+-HE1ML compatibility
+-Fixed spindash cancelling early in low fps
+-Restored Burning Blaze skydive and light speed dash animations
+-Increased turning rate for fire tornado
+-Added lock-on cursor for Sky Gem
+
 v4.0
 -06 Blaze release
 -06 Sonic's Gems recreation
