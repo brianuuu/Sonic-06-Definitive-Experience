@@ -246,6 +246,12 @@ A: Unfortunately, because of the speed, you can't run pass the falling/crushing 
 ------------------------------------------------------------
 Change Log
 ------------------------------------------------------------
+v4.2
+-Fixed crashing in boss fights
+-Fixed mod order issue from code
+-Added Reaction Plate animations for all characters
+-Added SpinFall animation for Super Sonic (not for Sonic + Elise)
+
 v4.1
 -HE1ML compatibility
 -Fixed spindash cancelling early in low fps

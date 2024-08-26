@@ -1,3 +1,10 @@
+## Sonic 06 Definitive Experience v4.2
+
+- Fixed crashing in boss fights
+- Fixed mod order issue from code
+- Added Reaction Plate animations for all characters
+- Added SpinFall animation for Super Sonic (not for Sonic + Elise)
+
 ## Sonic 06 Definitive Experience v4.1
 
 - HE1ML compatibility

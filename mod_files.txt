@@ -42,6 +42,8 @@ add core/06Blaze/SonicSsz.ar.00
 add core/06Blaze/SonicSsz.arl
 add core/06Blaze/SonicTpj.ar.00
 add core/06Blaze/SonicTpj.arl
+add core/06Blaze/SonicTrick.ar.00
+add core/06Blaze/SonicTrick.arl
 add core/06Blaze/SonicWater.ar.00
 add core/06Blaze/SonicWater.arl
 add core/06Elise/voices/English/SonicVoice.ar.00
@@ -82,6 +84,8 @@ add core/06Elise/SonicSsz.ar.00
 add core/06Elise/SonicSsz.arl
 add core/06Elise/SonicTpj.ar.00
 add core/06Elise/SonicTpj.arl
+add core/06Elise/SonicTrick.ar.00
+add core/06Elise/SonicTrick.arl
 add core/06Elise/SonicWater.ar.00
 add core/06Elise/SonicWater.arl
 add core/06Sonic/voices/English/SonicVoice.ar.00
@@ -122,6 +126,8 @@ add core/06Sonic/SonicSsz.ar.00
 add core/06Sonic/SonicSsz.arl
 add core/06Sonic/SonicTpj.ar.00
 add core/06Sonic/SonicTpj.arl
+add core/06Sonic/SonicTrick.ar.00
+add core/06Sonic/SonicTrick.arl
 add core/06Sonic/SonicWater.ar.00
 add core/06Sonic/SonicWater.arl
 add core/Languages/English/Result.ar.00
@@ -146,6 +152,14 @@ add core/cmn200.arl
 add core/EnemyCommon.ar.00
 add core/EnemyCommon.arl
 add core/ev_Bypass.arl
+add core/ev320.ar.00
+add core/ev320.arl
+add core/ev330.ar.00
+add core/ev330.arl
+add core/ev420.ar.00
+add core/ev420.arl
+add core/ev430.ar.00
+add core/ev430.arl
 add core/Loading.ar.00
 add core/Loading.arl
 add core/ResidentLoading.ar.00
